@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+h2 {
+  margin: 35px;
+}
+h5 {
+  margin: 0;
+}
+
+.container {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  max-width: 400px;
+  border-radius: 6px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 25px;
+}
+.card-img {
+  margin: 0;
+  padding: 0;
+}
+.card img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  max-width: 100%;
+  height: auto;
+}
+.card-text .text {
+  width: 300px;
+  margin: 25px auto;
+  color: hsl(223, 47%, 23%);
+  font-size: 1rem;
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 25px;
+  border-radius: 12px;
+  margin: 25px auto;
+}
+.order-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.order-text {
+  margin-left: 10px;
+}
+.order-text p {
+  margin: 0;
+}
+.order-text h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.card .btn a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 0;
+  border-radius: 6px;
+  color: white;
+  background-color: #382ae1;
+}
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
+  .card-text .text {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    max-width: 300px;
+  }
+  .card-text .text {
+    width: 200px;
+  }
+}
